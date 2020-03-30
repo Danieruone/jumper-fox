@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class ParallaxEffect : MonoBehaviour{
     
-    private float lenght, startpos;
     public GameObject cam;
+
+    private float lenght, startpos;
     public float parallaxEffect;
+
     // Start is called before the first frame update
     void Start()
     {

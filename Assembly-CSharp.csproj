@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4C73AD30-3DAB-9B5D-E18C-09652AD551E3}</ProjectGuid>
+    <ProjectGuid>{2A55FE53-A92E-35B7-E1C1-CE850C7B605A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,31 +64,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Backgroundcontroller.cs" />
-    <Compile Include="Assets\Scripts\cameracontroller.cs" />
-    <Compile Include="Assets\Scripts\Manager.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\CoinCounter.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\MapController.cs" />
     <Compile Include="Assets\Scripts\ParallaxEffect.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <None Include="Assets\Fonts\heavyloudedge\heavyloudedge - READ ME.txt" />
-    <None Include="Assets\GameManagers\1.txt" />
-    <None Include="Assets\GameManagers\2.txt" />
-    <None Include="Assets\Art\Enviroment pack\Font.txt" />
-    <None Include="Assets\Art\Enviroment pack\License.txt" />
-    <None Include="Assets\GameManagers\3.txt" />
+    <None Include="Assets\Resources\1.txt" />
+    <None Include="Assets\Resources\2.txt" />
+    <None Include="Assets\Sprites\Enviroment pack\Font.txt" />
+    <None Include="Assets\Sprites\Enviroment pack\License.txt" />
+    <None Include="Assets\Resources\3.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Daniel/Desktop/UEVideojuegos-inicio/procedural clase 1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Daniel/Documents/Unity Projects/Jumper Fox/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Daniel/Desktop/UEVideojuegos-inicio/procedural clase 1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Daniel/Documents/Unity Projects/Jumper Fox/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Daniel/Desktop/UEVideojuegos-inicio/procedural clase 1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Daniel/Documents/Unity Projects/Jumper Fox/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Daniel/Desktop/UEVideojuegos-inicio/procedural clase 1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Daniel/Documents/Unity Projects/Jumper Fox/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Daniel/Desktop/UEVideojuegos-inicio/procedural clase 1/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Daniel/Documents/Unity Projects/Jumper Fox/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -292,7 +294,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.18f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Daniel/Desktop/UEVideojuegos-inicio/procedural clase 1/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Daniel/Documents/Unity Projects/Jumper Fox/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.18f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
