@@ -15,20 +15,17 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isAlive)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 jump = true;
-                GetComponent<Animator>().SetTrigger("Jump");
+                GetComponent<Animator>().SetTrigger("jump");
             }
             controller.Move(runSpeed * Time.deltaTime, false, jump);
-            GetComponent<Animator>().SetBool("isRunning", true);
             jump = false;
         }
         else
         {
             controller.Move(0f, false, jump);
-            GetComponent<Animator>().SetBool("isRunning", false);
         }
-        
     }
 }

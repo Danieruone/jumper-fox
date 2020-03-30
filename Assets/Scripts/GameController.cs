@@ -12,6 +12,13 @@ public class GameController : MonoBehaviour
     public GameObject WinText;
     public int coins = 0;
 
+    SoundManager sound;
+
+    private void Start()
+    {
+        sound = GameObject.Find("Main Camera").GetComponent<SoundManager>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -21,10 +28,16 @@ public class GameController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Dead")) {
+            sound.camAudio.clip = sound.dead;
+            sound.camAudio.volume = 1f;
+            sound.camAudio.Play();
             Dead();
         }
 
         if (collision.gameObject.CompareTag("Win")) {
+            sound.camAudio.clip = sound.win;
+            sound.camAudio.volume = 1f;
+            sound.camAudio.Play();
             Win();
         }
     }

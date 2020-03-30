@@ -70,10 +70,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1163686101082013114}
   - component: {fileID: 3153572160191678149}
-  - component: {fileID: 8988076196237036845}
   - component: {fileID: 5978455709106304750}
+  - component: {fileID: 1146610240512010842}
   - component: {fileID: 4960572263136609763}
   - component: {fileID: 114700967058488794}
+  - component: {fileID: 7693355598640225524}
+  - component: {fileID: 8183797582426315893}
   - component: {fileID: 7085115351362157810}
   m_Layer: 0
   m_Name: Character
@@ -146,32 +148,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8988076196237036845
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6729360141301101060}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: f6d47b8fbeef02a48ab5044382b5cc4a, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.029155493, y: -0.3833902}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.65, y: 1.6}
-    newSize: {x: 1.65, y: 1.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.744926, y: 0.8332195}
-  m_EdgeRadius: 0
 --- !u!50 &5978455709106304750
 Rigidbody2D:
   serializedVersion: 4
@@ -193,6 +169,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!58 &1146610240512010842
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729360141301101060}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.05157739, y: -0.35587096}
+  serializedVersion: 2
+  m_Radius: 0.40678525
 --- !u!114 &4960572263136609763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +228,34 @@ MonoBehaviour:
   controller: {fileID: 4960572263136609763}
   isAlive: 1
   runSpeed: 50
+--- !u!114 &7693355598640225524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729360141301101060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13bc28371823c6b449b3538760069153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsText: {fileID: 0}
+  gameOverText: {fileID: 0}
+  WinText: {fileID: 0}
+  coins: 0
+--- !u!114 &8183797582426315893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729360141301101060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11053dc221bb0a74b88fab0ccf54a8ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &7085115351362157810
 Animator:
   serializedVersion: 3
