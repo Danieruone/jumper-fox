@@ -8,8 +8,8 @@ public class GameController : MonoBehaviour
 {
 
     public Text coinsText;
-    public Text gameOverText;
-    public Text WinText;
+    public GameObject gameOverText;
+    public GameObject WinText;
     public int coins = 0;
 
     // Update is called once per frame
@@ -32,14 +32,14 @@ public class GameController : MonoBehaviour
     void Win() {
         gameObject.GetComponent<Animator>().SetBool("winCondition", true);
         gameObject.GetComponent<PlayerMovement>().isAlive = false;
-        WinText.gameObject.SetActive(true);
+        WinText.SetActive(true);
         Invoke("changeScene", 2f);
     }
 
     void Dead() {
         gameObject.GetComponent<Animator>().SetBool("isAlive", false);
         gameObject.GetComponent<PlayerMovement>().isAlive = false;
-        gameOverText.gameObject.SetActive(true);
+        gameOverText.SetActive(true);
         Invoke("changeScene", 2f);
     }
 
